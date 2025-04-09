@@ -66,6 +66,9 @@ body{
     color: white;
     text-transform: none;
 }
+.bouton.panier:hover{
+    background: #c38ff5;
+}
 #user{
     display: flex;
     text-decoration: none;
@@ -76,7 +79,34 @@ body{
     width:100%;
     object-fit: cover;
 }
-
+#texte-header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#bouton-more{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.bouton.primaire{
+    background: #8005F2;
+    color: white;
+}
+.bouton.primaire:hover{
+    background: #c38ff5;
+}
+.bouton.secondaire{
+    background: transparent;
+    color: #8005F2;
+    border: 2px solid #8005F2;
+}
+ 
+.bouton.secondaire:hover{
+    border: 2px solid #c38ff5;
+    color: #c38ff5;
+}
+ 
 main{
     display:flex;
     flex-direction: column;
@@ -138,7 +168,7 @@ main h1{
     text-transform: none;
     width: auto;
 }
-.bouton:hover{
+.bouton.ajout-panier:hover{
     background: #c38ff5;
 }
 
