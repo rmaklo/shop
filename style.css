@@ -1,9 +1,9 @@
 body{
-    font-family: "Plus Jakarta Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     margin: 0;
-    background: #cbcaca; 
+    background: #dbdad6; 
 }
 
 #pp{
@@ -20,10 +20,13 @@ body{
     justify-content: center;
     gap: 280px;
     width: auto;
-    padding: 8px;
+    padding: 24px;
     background: white;
     -webkit-box-shadow: 0px 0px 11px 4px rgba(0,0,0,0.24); 
     box-shadow: 0px 0px 11px 4px rgba(0,0,0,0.24);
+}
+#logo h4{
+    font-weight: 900;
 }
 #menu{
     display: flex;
@@ -46,7 +49,6 @@ body{
     align-items: center;
     text-decoration: none;
     color: #000000;
-    /*margin-left: 64px;*/
     gap:24px;
 }
 .bouton{
@@ -75,7 +77,21 @@ body{
     gap:24px;
 }
 
+/*header{
+    background-image: url(photo-header.png);
+    background-size: cover;
+}*/
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #affiche img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width:100%;
     object-fit: cover;
 }
@@ -83,6 +99,20 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    color: white;
+}
+#texte-header{
+    text-transform: uppercase;
+}
+#texte-header h1{
+    font-size: 250%;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+#texte-header h4{
+    font-size: 125%;
+    font-weight:300;
+    margin-top: 0;
 }
 #bouton-more{
     display: flex;
@@ -101,7 +131,6 @@ body{
     color: #8005F2;
     border: 2px solid #8005F2;
 }
- 
 .bouton.secondaire:hover{
     border: 2px solid #c38ff5;
     color: #c38ff5;
@@ -115,6 +144,8 @@ main{
     text-transform: uppercase;
 }
 main h1{
+    font-size: 250%;
+    font-weight: 900;
     padding-top: 64px;
     padding-bottom: 64px;
 }
@@ -124,14 +155,14 @@ main h1{
     color: black;
     flex-direction: column;
     align-items: center;
-    font-family: "Plus Jakarta Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     gap: 5px;
     border-radius: 8px;
     overflow: hidden;
     width: 25%;
     -webkit-box-shadow: 0px 0px 11px 4px rgba(0,0,0,0.24); 
     box-shadow: 0px 0px 11px 4px rgba(0,0,0,0.24);
-    transition: all 1s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 .cards-container .shoes{
     width: 100%;
@@ -144,12 +175,19 @@ main h1{
 .CA p{
     text-transform: capitalize;
 }
+.card:hover{
+    transform: scale(1.1);
+ }
 .card-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.marque{
+    margin:0;
+}
 .prix{
+    margin: 0;
     color:#8005F2;
 }
 .cards-container{
