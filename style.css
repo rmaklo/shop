@@ -1,3 +1,4 @@
+/*Le body*/
 body{
     font-family: "Poppins", sans-serif;
     font-optical-sizing: auto;
@@ -6,6 +7,7 @@ body{
     background: #dbdad6; 
 }
 
+/*Barre de navigation*/
 #pp{
     display: flex;
     align-items: center;
@@ -77,31 +79,28 @@ body{
     gap:24px;
 }
 
-/*header{
-    background-image: url(photo-header.png);
-    background-size: cover;
-}*/
-
+/*Hero header*/
 header{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-#affiche img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header img{
     width:100%;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
+}
+#texte-bouton{
+    display: flex;
+    align-self: center;
+    position: absolute;
+    flex-direction: column;
 }
 #texte-header{
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     color: white;
-}
-#texte-header{
     text-transform: uppercase;
 }
 #texte-header h1{
@@ -135,7 +134,8 @@ header{
     border: 2px solid #c38ff5;
     color: #c38ff5;
 }
- 
+
+/*Les cartes*/
 main{
     display:flex;
     flex-direction: column;
@@ -210,6 +210,7 @@ main h1{
     background: #c38ff5;
 }
 
+/*Le footer*/
 #footer{
     display: flex;
     justify-content: center;
